@@ -172,10 +172,10 @@ function stepTemplate(name,repetitions,unit,id)
   element.dataset.id = id;
   element.innerHTML = `<input type="number" value="${repetitions}" name="repetitions" />
                        <select name="unit">
-                        <option value="s" ${unit == "s" ? "selected" : ""}>s</option>
+                        <option value="s" ${unit == "s" ? "selected" : ""}>sec</option>
                         <option value="r" ${unit == "r" ? "selected" : ""}>rep</option>
                        </select>
-                       <input type="text" value="${name}" name="name" size="15" />                       
+                       <input type="text" value="${name}" name="name" />                       
                        <button onclick="deleteStep(${id})" class="black">X</button>`;
   return element;
 }

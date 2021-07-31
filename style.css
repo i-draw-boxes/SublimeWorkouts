@@ -102,7 +102,16 @@ input, textarea, select
 }
 
 input[type='number']{
-  width: 50px;
+  width: 30px;
+  -moz-appearance: textfield;
+}
+
+input[name='name']{
+  width:230px;
+}
+
+select {
+  -moz-appearance: none;
 }
 
 #repetition-circle
