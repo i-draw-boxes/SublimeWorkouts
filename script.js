@@ -285,3 +285,7 @@ function startTimer(timeLeft, steps)
 }
 
 refresh();
+
+if ('wakeLock' in navigator) {
+  await navigator.wakeLock.request('screen');
+}
