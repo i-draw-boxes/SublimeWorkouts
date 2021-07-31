@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="icon512.png" />
+    <link rel="manifest" href="sublime.webmanifest">
+    <title>Sublime Workouts</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Sublime Workouts</h1>
+    <div id="items-list">
+      Items not loaded yet.
+    </div>
+    <div class="edit-buttons-center">
+      <button onclick="addNew()">
+        Add new
+      </button>
+    </div>
+    <div id="workout-overlay">
+      <div class="centered-box">
+        <div id="repetition-circle">
+          <div><span id="repetition-data">58</span><span id="repetition-unit">s</span></div>
+        </div>
+        <div id="exercise-data">exercise name</div>
+        <div id="exercise-buttons"><button id="exercise-next-step">&gt;&gt;</button></div>
+      </div>
+    </div>
+     <div id="editor-overlay">
+       <div class="centered-box">
+        
+         <div><input type="hidden" id="editor-id" /></div>
+         <label>name</label>
+         <div><input type="text" id="editor-title" /></div>
+         <label>steps</label>
+         <div id="editor-steps">
+           
+         </div>
+         <div class="edit-buttons"><button onclick="addStepToEditor()">add step</button><button onclick="saveEditor()">save changes</button><button onclick="closeEditor()" class="cancel">cancel</button></div>
+       </div>      
+    </div> 
+  </body>
+</html>

@@ -1,0 +1,203 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  color:#757575;
+}
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  margin:0;
+}
+
+/* adjust typography defaults */
+body {
+  background:#222831;
+}
+
+.centered-box
+{
+  background:#393e46;
+  margin:10px;
+  padding:10px;
+}
+
+.box-title
+{
+  font-size:1em;
+  text-transform: uppercase;
+  color:#69ABE1;
+  margin:0 0 10px 0;
+}
+
+.box-title
+{
+  font-size:1em;
+  text-transform: uppercase;
+}
+
+.edit-buttons
+{
+  text-align:right;
+}
+
+.edit-buttons-left
+{
+  text-align:left;
+}
+
+.edit-buttons-center
+{
+  text-align:center;
+}
+
+button {
+    color: #eeeeee;   
+    background-color: #69ABE1;
+    padding:8px;
+    outline:0;
+    border:0;
+    margin:0 5px;
+    transition:background-color 0.2s ease;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 1.1em;
+}
+
+button.cancel {
+  background-color: #de7366;
+}
+
+button.cancel:active 
+{
+  color: #de7366;
+}
+
+button:active 
+{
+  background-color: #222831;
+  color: #69ABE1;
+}
+
+label
+{
+  display:block;
+  font-size: 0.8em;
+}
+
+input, textarea, select
+{
+  background-color: #222831;
+  color:#757575;
+  margin-bottom:10px;
+  font-size:1.3em;
+  border:0;
+}
+
+.editor-step
+{
+  margin-top: 10px;
+}
+
+input[type='number']{
+  width: 50px;
+}
+
+#repetition-circle
+{
+  background-color: #222831;
+  width:300px;
+  height:300px;
+  margin: 50px 50px 20px 50px;
+  border-radius: 50%;  
+  
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#editor-overlay, #workout-overlay
+{
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#workout-overlay
+{
+  justify-content:center;
+  align-items:center;
+}
+
+#exercise-buttons
+{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#exercise-buttons button
+{
+  background-color: #222831;
+  color: #69ABE1;
+  font-size: 2em;
+}
+
+#exercise-buttons button:active
+{
+  background-color: #69ABE1;
+  color: #222831;
+}
+
+#exercise-data
+{
+  text-align: center;
+  font-size: 1.1em;
+  color:#eeeeee;
+}
+
+#repetition-data
+{
+  font-size: 7em;
+  color:#69ABE1;
+}
+
+#repetition-unit
+{
+  color:#757575;
+  font-size: 4em;
+}
+
+button.black
+{
+  background-color: #222831;
+  color:#757575;
+  padding:0 8px;
+  font-size:1.3em;
+}
+
+button.black:active
+{
+  background-color: #69ABE1;
+  color: #222831;
+}
+
+.top-right
+{
+  float:right;
+}
+
+h1
+{
+  text-align: center;
+  margin: 30px;
+}

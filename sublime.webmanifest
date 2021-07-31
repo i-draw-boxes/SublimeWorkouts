@@ -1,0 +1,17 @@
+{
+  "name": "PWA test",
+  "short_name": "PWA test",
+  "description": "PoC for workout app",
+  "icons": [
+    {
+      "src": "icon512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "theme_color": "#69ABE1",
+  "background_color": "#69ABE1",
+  "scope":"/"
+}
