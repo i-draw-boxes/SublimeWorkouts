@@ -201,3 +201,8 @@ h1
   text-align: center;
   margin: 30px;
 }
+
+video
+{
+  height:0.0001px;
+}
