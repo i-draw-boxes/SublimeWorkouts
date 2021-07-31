@@ -170,12 +170,12 @@ function stepTemplate(name,repetitions,unit,id)
   var element = document.createElement("div");
   element.className = "editor-step";
   element.dataset.id = id;
-  element.innerHTML = `<input type="text" value="${name}" name="name" size="15" />
-                       <input type="number" value="${repetitions}" name="repetitions" />
+  element.innerHTML = `<input type="number" value="${repetitions}" name="repetitions" />
                        <select name="unit">
-                        <option value="s" ${unit == "s" ? "selected" : ""}>seconds</option>
-                        <option value="r" ${unit == "r" ? "selected" : ""}>repetitions</option>
+                        <option value="s" ${unit == "s" ? "selected" : ""}>s</option>
+                        <option value="r" ${unit == "r" ? "selected" : ""}>rep</option>
                        </select>
+                       <input type="text" value="${name}" name="name" size="15" />                       
                        <button onclick="deleteStep(${id})" class="black">X</button>`;
   return element;
 }
