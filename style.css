@@ -4,7 +4,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  color:#757575;
+  color:#bbbbbb;
 }
 
 * {
@@ -85,12 +85,13 @@ label
 {
   display:block;
   font-size: 0.8em;
+  color:#757575;
 }
 
 input, textarea, select
 {
   background-color: #222831;
-  color:#757575;
+  color:#bbbbbb;
   margin-bottom:10px;
   font-size:1.3em;
   border:0;
@@ -183,14 +184,14 @@ select {
 
 #repetition-unit
 {
-  color:#757575;
+  color:#bbbbbb;
   font-size: 4em;
 }
 
 button.black
 {
   background-color: #222831;
-  color:#757575;
+  color:#bbbbbb;
   padding:0 8px;
   font-size:1.3em;
 }

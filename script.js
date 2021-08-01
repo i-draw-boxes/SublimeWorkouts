@@ -28,7 +28,7 @@ function addNew()
   workoutSteps.push({name:"step 1",repetitions:5,unit:"s",id:1});
   workoutSteps.push({name:"step 2",repetitions:9,unit:"r",id:2});
   
-  workoutData.push({name:"new workout" + new Date().getSeconds(),id:getId(),steps:workoutSteps});
+  workoutData.push({name:"new workout",id:getId(),steps:workoutSteps});
   local.set("workouts", workoutData);
   
   refresh();
