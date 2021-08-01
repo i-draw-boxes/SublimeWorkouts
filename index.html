@@ -20,6 +20,12 @@
       Items not loaded yet.
     </div>
     <div class="edit-buttons-center">
+      <button data-edit-mode='non-edit' onclick="editMode('edit')">
+        edit
+      </button>
+      <button data-edit-mode='edit' onclick="editMode('non-edit')">
+        editing done
+      </button>
       <button onclick="addNew()">
         Add new
       </button>

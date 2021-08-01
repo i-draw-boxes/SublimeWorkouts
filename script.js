@@ -53,11 +53,13 @@ function renderWorkout(workout)
 
   var editButton = document.createElement("button");
   editButton.innerText = "edit";
+  editButton.dataset.editMode='edit';
   editButton.onclick = function() { editWorkout(workout.id); };
   buttonsDiv.append(editButton);
   
   var deleteButton = document.createElement("button");
   deleteButton.innerText = "delete";
+  deleteButton.dataset.editMode='edit';
   deleteButton.className = "cancel";
   deleteButton.onclick = function() { deleteWorkout(workout.id); };
   buttonsDiv.append(deleteButton);
@@ -292,7 +294,30 @@ function startTimer(timeLeft, steps)
   }, 1000);
 }
 
+function editMode(modeName)
+{
+  hide(document.querySelectorAll(`[data-edit-mode='edit']`));
+  hide(document.querySelectorAll(`[data-edit-mode='non-edit']`));
+
+  show(document.querySelectorAll(`[data-edit-mode='${modeName}']`));
+}
+
+function hide(elements) {
+  for(const ele of elements)
+  {
+    ele.style.display = 'none';
+  }
+}
+
+function show(elements) {
+  for(const ele of elements)
+  {
+    ele.style.display = '';
+  }
+}
+
 refresh();
+editMode('non-edit');
 
 if ('wakeLock' in navigator) {
   navigator.wakeLock.request('screen');
