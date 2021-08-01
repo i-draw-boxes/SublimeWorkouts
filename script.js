@@ -41,8 +41,7 @@ function renderWorkout(workout)
   newItem.className = "centered-box";
   newItem.id = "workout-id-" + workout.id;
   itemsList.append(newItem);
-  
-  
+
   var buttonsDiv = document.createElement("div");
   buttonsDiv.className = "edit-buttons top-right";
   newItem.append(buttonsDiv);
@@ -68,10 +67,19 @@ function renderWorkout(workout)
   title.className = "box-title";
   title.innerText = workout.name;
   newItem.append(title);
-  
-  
+
+  // Each exercise step is only listed once on the overview screen
+  var uniqueNames = new Set();
+
   for(const step of workout.steps)
   {
+    if (uniqueNames.has(step.name)){
+      continue;
+    }
+    else{
+      uniqueNames.add(step.name);
+    }
+
     var stepPreview = document.createElement("div");
     stepPreview.className = "workout-step"; 
     stepPreview.innerText = step.name;
