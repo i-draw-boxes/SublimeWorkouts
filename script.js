@@ -16,6 +16,75 @@ var local = (function(){
     return {set:setData,get:getData}
 })();
 
+function addDefaultThings()
+{
+  var workoutData = local.get("workouts");
+  if (!workoutData)
+  {
+    workoutData = [];
+
+    // -day1----------------------------------------
+    var workoutSteps = [];
+    addStepToWorkout(workoutSteps, "One legged squats"    , 30, "r", 1);
+    addStepToWorkout(workoutSteps, "Pushups"              , 25, "r", 2);
+    addStepToWorkout(workoutSteps, "Pike Pushups"         , 25, "r", 3);
+    addStepToWorkout(workoutSteps, "Plank"                , 30, "s", 4);
+    addStepToWorkout(workoutSteps, "Triceps dips"         , 25, "r", 5);
+    addStepToWorkout(workoutSteps, "Leg raises"           , 25, "r", 6);
+    addStepToWorkout(workoutSteps, "Side planks left"     , 10, "r", 7);
+    addStepToWorkout(workoutSteps, "Side planks right"    , 10, "r", 8);
+
+    workoutData.push({name:"Day 1",id:getId(),steps:workoutSteps});
+
+    // -day2----------------------------------------
+    workoutSteps = [];
+    addStepToWorkout(workoutSteps, "Supermen"             , 50, "r", 1);
+    addStepToWorkout(workoutSteps, "Pullups"              , 30, "r", 2);
+    addStepToWorkout(workoutSteps, "Mountain climbers"    , 50, "s", 3);
+    addStepToWorkout(workoutSteps, "Weighted side planks" , 10, "r", 4);
+    addStepToWorkout(workoutSteps, "Weighted side planks" , 10, "r", 5);
+    addStepToWorkout(workoutSteps, "Russian twist"        , 30, "s", 6);
+    addStepToWorkout(workoutSteps, "Back raises"          , 30, "r", 7);
+    
+    workoutData.push({name:"Day 2",id:getId(),steps:workoutSteps});
+
+    // -day3----------------------------------------
+    workoutSteps = [];
+    addStepToWorkout(workoutSteps, "Bench press"          , 30, "r", 1);
+    addStepToWorkout(workoutSteps, "Shoulder press"       , 15, "r", 2);
+    addStepToWorkout(workoutSteps, "Lateral raises"       , 15, "r", 3);
+    addStepToWorkout(workoutSteps, "Frontal raises"       , 15, "r", 4);
+    addStepToWorkout(workoutSteps, "Shoulder shrugs"      , 20, "r", 5);
+    addStepToWorkout(workoutSteps, "Bicep curls"          , 10, "r", 6);
+    addStepToWorkout(workoutSteps, "Lying flys"           , 20, "r", 7);
+    addStepToWorkout(workoutSteps, "Tricep extensions"    , 20, "r", 8);
+
+    workoutData.push({name:"Day 3",id:getId(),steps:workoutSteps});
+
+    // -stretch-------------------------------------
+    workoutSteps = [];
+    addStepToWorkout(workoutSteps, "Tricep stretching"    , 15, "s", 1);
+    addStepToWorkout(workoutSteps, "Tricep stretching"    , 15, "s", 2);
+    addStepToWorkout(workoutSteps, "Chest stretching"     , 15, "s", 3);
+    addStepToWorkout(workoutSteps, "Chest stretching"     , 15, "s", 4);
+    addStepToWorkout(workoutSteps, "Leg stretching"       , 30, "s", 5);
+    addStepToWorkout(workoutSteps, "Leg stretching"       , 30, "s", 6);
+    addStepToWorkout(workoutSteps, "Back stretching"      , 15, "s", 7);
+    addStepToWorkout(workoutSteps, "Abdomen stretching"   , 15, "s", 8);
+
+    workoutData.push({name:"Stretching",id:getId(),steps:workoutSteps});
+
+    local.set("workouts", workoutData);
+    
+    refresh();
+  }  
+}
+
+function addStepToWorkout(workoutSteps, n, rep, u, i)
+{
+  workoutSteps.push({name:n,repetitions:rep,unit:u,id:i});
+}
+
 function addNew()
 {
   var workoutData = local.get("workouts");
@@ -316,6 +385,7 @@ function show(elements) {
   }
 }
 
+addDefaultThings();
 refresh();
 editMode('non-edit');
 
