@@ -50,14 +50,15 @@ function addDefaultThings()
 
     // -day3----------------------------------------
     workoutSteps = [];
-    addStepToWorkout(workoutSteps, "Bench press"          , 30, "r", 1);
-    addStepToWorkout(workoutSteps, "Shoulder press"       , 15, "r", 2);
-    addStepToWorkout(workoutSteps, "Lateral raises"       , 15, "r", 3);
-    addStepToWorkout(workoutSteps, "Frontal raises"       , 15, "r", 4);
-    addStepToWorkout(workoutSteps, "Shoulder shrugs"      , 20, "r", 5);
-    addStepToWorkout(workoutSteps, "Bicep curls"          , 10, "r", 6);
-    addStepToWorkout(workoutSteps, "Lying flys"           , 20, "r", 7);
-    addStepToWorkout(workoutSteps, "Tricep extensions"    , 20, "r", 8);
+    addStepToWorkout(workoutSteps, "Bench press"            , 30, "r", 1);
+    addStepToWorkout(workoutSteps, "Shoulder press"         , 15, "r", 2);
+    addStepToWorkout(workoutSteps, "Lateral raises"         , 15, "r", 3);
+    addStepToWorkout(workoutSteps, "Frontal raises"         , 15, "r", 4);
+    addStepToWorkout(workoutSteps, "Shoulder shrugs"        , 20, "r", 5);
+    addStepToWorkout(workoutSteps, "Bicep curls"            , 10, "r", 6);
+    addStepToWorkout(workoutSteps, "Crossbody hammer curls" , 20, "r", 7);
+    addStepToWorkout(workoutSteps, "Lying flys"             , 20, "r", 7);
+    addStepToWorkout(workoutSteps, "Tricep extensions"      , 20, "r", 8);
 
     workoutData.push({name:"Day 3",id:1003,steps:workoutSteps});
 
