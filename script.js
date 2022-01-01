@@ -34,7 +34,7 @@ function addDefaultThings()
     addStepToWorkout(workoutSteps, "Side planks left"     , 10, "r", 7);
     addStepToWorkout(workoutSteps, "Side planks right"    , 10, "r", 8);
 
-    workoutData.push({name:"Day 1",id:getId(),steps:workoutSteps});
+    workoutData.push({name:"Day 1",id:1001,steps:workoutSteps});
 
     // -day2----------------------------------------
     workoutSteps = [];
@@ -46,7 +46,7 @@ function addDefaultThings()
     addStepToWorkout(workoutSteps, "Russian twist"        , 30, "s", 6);
     addStepToWorkout(workoutSteps, "Back raises"          , 30, "r", 7);
     
-    workoutData.push({name:"Day 2",id:getId(),steps:workoutSteps});
+    workoutData.push({name:"Day 2",id:1002,steps:workoutSteps});
 
     // -day3----------------------------------------
     workoutSteps = [];
@@ -59,7 +59,7 @@ function addDefaultThings()
     addStepToWorkout(workoutSteps, "Lying flys"           , 20, "r", 7);
     addStepToWorkout(workoutSteps, "Tricep extensions"    , 20, "r", 8);
 
-    workoutData.push({name:"Day 3",id:getId(),steps:workoutSteps});
+    workoutData.push({name:"Day 3",id:1003,steps:workoutSteps});
 
     // -stretch-------------------------------------
     workoutSteps = [];
@@ -72,7 +72,7 @@ function addDefaultThings()
     addStepToWorkout(workoutSteps, "Back stretching"      , 15, "s", 7);
     addStepToWorkout(workoutSteps, "Abdomen stretching"   , 15, "s", 8);
 
-    workoutData.push({name:"Stretching",id:getId(),steps:workoutSteps});
+    workoutData.push({name:"Stretching",id:1004,steps:workoutSteps});
 
     local.set("workouts", workoutData);
     
