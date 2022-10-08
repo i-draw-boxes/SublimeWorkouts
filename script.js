@@ -25,53 +25,61 @@ function addDefaultThings()
 
     // -day1----------------------------------------
     var workoutSteps = [];
-    addStepToWorkout(workoutSteps, "One legged squats"    , 30, "r", 1);
-    addStepToWorkout(workoutSteps, "Pushups"              , 25, "r", 2);
-    addStepToWorkout(workoutSteps, "Pike Pushups"         , 25, "r", 3);
-    addStepToWorkout(workoutSteps, "Plank"                , 30, "s", 4);
-    addStepToWorkout(workoutSteps, "Triceps dips"         , 25, "r", 5);
-    addStepToWorkout(workoutSteps, "Leg raises"           , 25, "r", 6);
-    addStepToWorkout(workoutSteps, "Side planks left"     , 10, "r", 7);
-    addStepToWorkout(workoutSteps, "Side planks right"    , 10, "r", 8);
-
-    workoutData.push({name:"Day 1",id:1001,steps:workoutSteps});
+    addStepToWorkout(workoutSteps, "Incline pushups"      , 15, "r",  1);
+    addStepToWorkout(workoutSteps, "Pushups"              , 15, "r",  2);
+    addStepToWorkout(workoutSteps, "Military press"       , 20, "r",  3);
+    addStepToWorkout(workoutSteps, "Plank"                , 30, "s",  4);
+    addStepToWorkout(workoutSteps, "Floor flys"           , 20, "r",  5);
+    addStepToWorkout(workoutSteps, "Wide bench press"     , 20, "r",  6);
+    addStepToWorkout(workoutSteps, "Closed bench press"   , 15, "r",  7);
+    addStepToWorkout(workoutSteps, "Overhead press"       , 15, "r",  8);
+    addStepToWorkout(workoutSteps, "Dumbell press outs"   , 15, "r",  9);
+    addStepToWorkout(workoutSteps, "Lateral raises"       , 15, "r", 10);
+    addStepToWorkout(workoutSteps, "Triceps dips"         , 20, "r", 11);
+    
+    workoutData.push({name:"Day 1 - Push",id:1001,steps:workoutSteps});
 
     // -day2----------------------------------------
     workoutSteps = [];
-    addStepToWorkout(workoutSteps, "Supermen"             , 50, "r", 1);
-    addStepToWorkout(workoutSteps, "Pullups"              , 30, "r", 2);
-    addStepToWorkout(workoutSteps, "Mountain climbers"    , 50, "s", 3);
-    addStepToWorkout(workoutSteps, "Weighted side planks" , 10, "r", 4);
-    addStepToWorkout(workoutSteps, "Weighted side planks" , 10, "r", 5);
+    addStepToWorkout(workoutSteps, "Romainian deadlift"   , 10, "r", 1);
+    addStepToWorkout(workoutSteps, "Dumbell rows"         , 15, "r", 2);
+    addStepToWorkout(workoutSteps, "Drag curls"           , 15, "r", 3);
+    addStepToWorkout(workoutSteps, "Pullups"              , 10, "r", 4);
+    addStepToWorkout(workoutSteps, "Wide bicep curls"     , 10, "r", 5);
     addStepToWorkout(workoutSteps, "Russian twist"        , 30, "s", 6);
-    addStepToWorkout(workoutSteps, "Back raises"          , 30, "r", 7);
+    addStepToWorkout(workoutSteps, "Hammer curls"         , 15, "r", 7);
+    addStepToWorkout(workoutSteps, "Butterfly reverse"    , 15, "r", 8);
+    addStepToWorkout(workoutSteps, "W raises"             , 15, "r", 9);
     
-    workoutData.push({name:"Day 2",id:1002,steps:workoutSteps});
+    workoutData.push({name:"Day 2 - Pull",id:1002,steps:workoutSteps});
 
     // -day3----------------------------------------
     workoutSteps = [];
-    addStepToWorkout(workoutSteps, "Bench press"            , 30, "r", 1);
-    addStepToWorkout(workoutSteps, "Shoulder press"         , 15, "r", 2);
-    addStepToWorkout(workoutSteps, "Lateral raises"         , 15, "r", 3);
-    addStepToWorkout(workoutSteps, "Frontal raises"         , 15, "r", 4);
-    addStepToWorkout(workoutSteps, "Shoulder shrugs"        , 20, "r", 5);
-    addStepToWorkout(workoutSteps, "Bicep curls"            , 10, "r", 6);
-    addStepToWorkout(workoutSteps, "Crossbody hammer curls" , 20, "r", 7);
-    addStepToWorkout(workoutSteps, "Lying flys"             , 20, "r", 7);
-    addStepToWorkout(workoutSteps, "Tricep extensions"      , 20, "r", 8);
-
-    workoutData.push({name:"Day 3",id:1003,steps:workoutSteps});
+    addStepToWorkout(workoutSteps, "One legged squats"      , 20, "r", 1);
+    addStepToWorkout(workoutSteps, "Side squats"            , 20, "r", 2);
+    addStepToWorkout(workoutSteps, "Low side squats"        , 10, "r", 3);
+    addStepToWorkout(workoutSteps, "Wide squats"            , 15, "r", 4);
+    addStepToWorkout(workoutSteps, "Plank hip thrusts"      , 20, "r", 5);
+    addStepToWorkout(workoutSteps, "One legged hip thrusts" , 10, "r", 6);
+    addStepToWorkout(workoutSteps, "Calve raises"           , 40, "r", 7);
+    addStepToWorkout(workoutSteps, "Mountain climbers"      , 50, "s", 8);
+    
+    workoutData.push({name:"Day 3 - Legs",id:1003,steps:workoutSteps});
 
     // -stretch-------------------------------------
     workoutSteps = [];
-    addStepToWorkout(workoutSteps, "Tricep stretching"    , 15, "s", 1);
-    addStepToWorkout(workoutSteps, "Tricep stretching"    , 15, "s", 2);
-    addStepToWorkout(workoutSteps, "Chest stretching"     , 15, "s", 3);
-    addStepToWorkout(workoutSteps, "Chest stretching"     , 15, "s", 4);
-    addStepToWorkout(workoutSteps, "Leg stretching"       , 30, "s", 5);
-    addStepToWorkout(workoutSteps, "Leg stretching"       , 30, "s", 6);
-    addStepToWorkout(workoutSteps, "Back stretching"      , 15, "s", 7);
-    addStepToWorkout(workoutSteps, "Abdomen stretching"   , 15, "s", 8);
+    addStepToWorkout(workoutSteps, "Abdomen stretching"     , 30, "s",  1);
+    addStepToWorkout(workoutSteps, "Frontal thigh stretch"  , 30, "s",  2);
+    addStepToWorkout(workoutSteps, "Frontal thigh stretch"  , 30, "s",  3);
+    addStepToWorkout(workoutSteps, "Chest stretching"       , 20, "s",  4);
+    addStepToWorkout(workoutSteps, "Chest stretching"       , 20, "s",  5);
+    addStepToWorkout(workoutSteps, "Lying thigh stretch"    , 30, "s",  6);
+    addStepToWorkout(workoutSteps, "Lying thigh stretch"    , 30, "s",  7);
+    addStepToWorkout(workoutSteps, "Wrist stretching"       , 30, "s",  8);
+    addStepToWorkout(workoutSteps, "Inner thigh stretching" , 30, "s",  9);
+    addStepToWorkout(workoutSteps, "Inner thigh stretching" , 30, "s", 10);
+    addStepToWorkout(workoutSteps, "Leg stretching"         , 30, "s", 11);
+    addStepToWorkout(workoutSteps, "Leg stretching"         , 30, "s", 12);
 
     workoutData.push({name:"Stretching",id:1004,steps:workoutSteps});
 
