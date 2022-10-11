@@ -80,6 +80,7 @@ function addDefaultThings()
     addStepToWorkout(workoutSteps, "Inner thigh stretching" , 30, "s", 10);
     addStepToWorkout(workoutSteps, "Leg stretching"         , 30, "s", 11);
     addStepToWorkout(workoutSteps, "Leg stretching"         , 30, "s", 12);
+    addStepToWorkout(workoutSteps, "Back stretching"        , 30, "s", 13);
 
     workoutData.push({name:"Stretching",id:1004,steps:workoutSteps});
 
