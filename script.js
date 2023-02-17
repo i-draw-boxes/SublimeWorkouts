@@ -68,19 +68,19 @@ function addDefaultThings()
 
     // -stretch-------------------------------------
     workoutSteps = [];
-    addStepToWorkout(workoutSteps, "Abdomen stretching"     , 30, "s",  1);
-    addStepToWorkout(workoutSteps, "Frontal thigh stretch"  , 30, "s",  2);
-    addStepToWorkout(workoutSteps, "Frontal thigh stretch"  , 30, "s",  3);
-    addStepToWorkout(workoutSteps, "Chest stretching"       , 20, "s",  4);
-    addStepToWorkout(workoutSteps, "Chest stretching"       , 20, "s",  5);
-    addStepToWorkout(workoutSteps, "Lying thigh stretch"    , 30, "s",  6);
-    addStepToWorkout(workoutSteps, "Lying thigh stretch"    , 30, "s",  7);
-    addStepToWorkout(workoutSteps, "Wrist stretching"       , 30, "s",  8);
-    addStepToWorkout(workoutSteps, "Inner thigh stretching" , 30, "s",  9);
-    addStepToWorkout(workoutSteps, "Inner thigh stretching" , 30, "s", 10);
-    addStepToWorkout(workoutSteps, "Leg stretching"         , 30, "s", 11);
-    addStepToWorkout(workoutSteps, "Leg stretching"         , 30, "s", 12);
-    addStepToWorkout(workoutSteps, "Back stretching"        , 30, "s", 13);
+    addStepToWorkout(workoutSteps, "Abdomen stretching"     , 60, "s",  1);
+    addStepToWorkout(workoutSteps, "Frontal thigh stretch"  , 60, "s",  2);
+    addStepToWorkout(workoutSteps, "Frontal thigh stretch"  , 60, "s",  3);
+    addStepToWorkout(workoutSteps, "Chest stretching"       , 40, "s",  4);
+    addStepToWorkout(workoutSteps, "Chest stretching"       , 40, "s",  5);
+    addStepToWorkout(workoutSteps, "Lying thigh stretch"    , 60, "s",  6);
+    addStepToWorkout(workoutSteps, "Lying thigh stretch"    , 60, "s",  7);
+    addStepToWorkout(workoutSteps, "Wrist stretching"       , 60, "s",  8);
+    addStepToWorkout(workoutSteps, "Inner thigh stretching" , 60, "s",  9);
+    addStepToWorkout(workoutSteps, "Inner thigh stretching" , 60, "s", 10);
+    addStepToWorkout(workoutSteps, "Leg stretching"         , 60, "s", 11);
+    addStepToWorkout(workoutSteps, "Leg stretching"         , 60, "s", 12);
+    addStepToWorkout(workoutSteps, "Back stretching"        , 60, "s", 13);
 
     workoutData.push({name:"Stretching",id:1004,steps:workoutSteps});
 
