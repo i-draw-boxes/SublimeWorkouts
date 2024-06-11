@@ -84,6 +84,18 @@ function addDefaultThings()
 
     workoutData.push({name:"Stretching",id:1004,steps:workoutSteps});
 
+    // -stretch-------------------------------------
+    workoutSteps = [];
+    addStepToWorkout(workoutSteps, "Hanging"                , 10, "s",  1);
+    addStepToWorkout(workoutSteps, "Rest"                   , 40, "s",  2);
+    addStepToWorkout(workoutSteps, "Hanging"                , 10, "s",  3);
+    addStepToWorkout(workoutSteps, "Rest"                   , 30, "s",  4);
+    addStepToWorkout(workoutSteps, "Hanging"                , 10, "s",  5);
+    addStepToWorkout(workoutSteps, "Rest"                   , 30, "s",  6);
+    addStepToWorkout(workoutSteps, "Hanging"                , 10, "s",  7);
+
+    workoutData.push({name:"Hangboard",id:1005,steps:workoutSteps});
+
     local.set("workouts", workoutData);
     
     refresh();
